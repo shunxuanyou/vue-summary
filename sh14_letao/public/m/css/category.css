@@ -1,0 +1,46 @@
+.my-content{
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+}
+.left{
+    width: 80px;
+    height: 100%;
+    float: left;
+    position: relative;
+}
+.right{
+    height: 100%;
+    margin-left: 90px;
+    position: relative;
+}
+.right .brand-list{
+    margin-top: 10px;
+}
+.right .brand-list a{
+    width: 33.3333%;
+    float: left;
+}
+.right .brand-list:after{
+    clear: both;
+}
+.right .brand-list a img{
+    display: block;
+    width: 100%;
+}
+.right .brand-list a p{
+    text-align: center;
+}
+.links a{
+    display: block;
+    color: #0f0f0f;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    font-size: 14px;
+    border-right: 1px solid #e0e0e0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
