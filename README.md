@@ -9,20 +9,20 @@ typora-copy-images-to: media
 
 ### 一、JS概念
 
-1.定义：基于对象和事件驱动的客户端脚本语言
-2.对象：类 -- 具有相同属性（有什么）和方法（能做什么）的集合对象 -- 类的实例化
-3.面向过程-》面向对象
-4.ECMAScript5->ECMAScript6（es5->es6）
-5.es5：一切皆对象
-6.事件驱动：所有的页面效果都由事件触发
-7.客户端脚本语言：浏览器解释型语言
+-   1.定义：基于对象和事件驱动的客户端脚本语言
+-   2.对象：类 -- 具有相同属性（有什么）和方法（能做什么）的集合对象 -- 类的实例化
+-   3.面向过程-》面向对象
+-   4.ECMAScript5->ECMAScript6（es5->es6）
+-   5.es5：一切皆对象
+-   6.事件驱动：所有的页面效果都由事件触发
+-   7.客户端脚本语言：浏览器解释型语言
 
 ## 变量
 
   - 变量是计算机内存中存储数据的标识符，根据变量名称可以获取到内存中存储的数据，使用变量可以方便的获取或者修改内存中的数据
 
-1.定义：变化的数，不固定的量
-2.声明：var 变量名 = 值
+-   1.定义：变化的数，不固定的量
+-   2.声明：var 变量名 = 值
 
 
 ### 变量的命名规则和规范
@@ -121,11 +121,9 @@ Number、String、Boolean、Undefined、Null
 
 #### String类型
 
-'abc'   "abc"
-
 - 字符串字面量
 
-  '程序猿'，'程序媛', "黑马程序猿"
+  ‘程序媛', "yeah hello"
 
 - 字符串长度
 
@@ -136,11 +134,11 @@ Number、String、Boolean、Undefined、Null
   字符串拼接使用 + 连接
 
   ```javascript
-  console.log(11 + 11);
-  console.log('hello' + ' world');
-  console.log('100' + '100');
-  console.log('11' + 11);
-  console.log('male:' + true);
+    console.log(11 + 11);//22
+      console.log('hello' + ' world');//hello world
+      console.log('100' + '100');//100100
+      console.log('11' + 11);//1111
+      console.log('male:' + true);//male:true
   ```
 
   1. 两边只要有一个是字符串，那么+就是字符串拼接功能
@@ -149,9 +147,11 @@ Number、String、Boolean、Undefined、Null
 #### Boolean类型
 
 - Boolean字面量：
+
     true和false，区分大小写
 
 - 计算机内部存储：
+
     true为1，false为0
 
 #### Undefined和Null
