@@ -76,7 +76,7 @@ Object、Array、Function
 
 - 数值字面量：数值的固定值的表示法
 
-  1024  60.5
+  1024  52.0
 
 - 进制
 
@@ -101,9 +101,9 @@ Object、Array、Function
 
 ```
 浮点数
-   var n = 5e-324;   // 科学计数法，5乘以10的-324次方。浮点数值的最高精度是 17 位小数，但在进行算术计算时其精确度远远不如整数
-   var result = 0.1 + 0.2;    // 结果不是 0.3，而是：0.30000000000000004
-   console.log(0.07 * 100);
+   var e = 5e-324; //5e-324 科学计数法，5乘以10的-324次方。浮点数值的最高精度是 17 位小数，但在进行算术计算时其精确度远远不如整数
+   var result = 0.1 + 0.2; // 结果不是 0.3，而是0.30000000000000004
+   console.log(0.07 * 100);//7.000000000000001
    不要判断两个浮点数是否相等
 ```
 
@@ -118,9 +118,22 @@ Object、Array、Function
 
 - 数值判断
 
-  - NaN：not a number
+  - NaN：代表非数字值的特殊值 not a number 
     - NaN 与任何值都不相等，包括他本身
-  - isNaN: is not a number
+  - isNaN: 确定一个值是否为NaN is not a number
+    -
+    ```
+        function milliseconds(x) {
+                if(isNaN(x)){
+                    return 'Not a Number';
+                }
+                return x*1000;
+            }
+            console.log(milliseconds('100F'));// expected output: "Not a Number"
+            console.log(milliseconds('0.0314E+2'));// expected output: 3140
+            
+    ```
+    
 
 #### String类型
 
