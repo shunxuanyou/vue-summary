@@ -121,7 +121,7 @@ Object、Array、Function
   - NaN：代表非数字值的特殊值 not a number 
     - NaN 与任何值都不相等，包括他本身
   - isNaN: 确定一个值是否为NaN is not a number
-    -
+    
     ```
         function milliseconds(x) {
                 if(isNaN(x)){
@@ -149,22 +149,14 @@ Object、Array、Function
 
   字符串拼接使用 + 连接
 
-  ```javascript
-    console.log(11 + 11);//22
-      console.log('hello' + ' world');//hello world
-      console.log('100' + '100');//100100
-      console.log('11' + 11);//1111
-      console.log('male:' + true);//male:true
-  ```
-
-  1. 两边只要有一个是字符串，那么+就是字符串拼接功能
-  2. 两边如果都是数字，那么就是算术功能。
+  - 如果加号两边有一个是字符串,那么加号就用来连接字符
+  - 如果加号两边是数字,那么加号就表示加法运算
 
 #### Boolean类型
 
 - Boolean字面量：
 
-    true和false，区分大小写
+    true、false
 
 - 计算机内部存储：
 
@@ -172,12 +164,10 @@ Object、Array、Function
 
 #### Undefined和Null
 
-1. undefined表示一个声明了没有赋值的变量，变量只声明的时候值默认是undefined
-2. null表示一个空，变量的值如果想为null，必须手动设置
+1. undefined声明但没有赋值的空变量类型，默认是undefined
+2. null表示空对象
 
-### 复杂数据类型
 
-​	Object
 
 ### 四、获取变量的类型
 
@@ -192,11 +182,11 @@ console.log(typeof age);  // 'number'
 
 在源代码中一个固定值的表示法。
 
-数值字面量：8, 9, 10
+数值字面量：1024,52.0
 
-字符串字面量：'黑马程序员', "大前端"
+字符串字面量：'程序媛', "yeah hello"
 
-布尔字面量：true，false
+布尔字面量：true,false
 
 ## 五、注释
 
@@ -297,47 +287,23 @@ console.log(name, age);
 + - * / %  
 ```
 
-### 一元运算符
+### 一元运算符、二元运算符
 
-一元运算符：只有一个操作数的运算符
+一元运算符：只有一个操作数的运算符 num++
 
-5 + 6  两个操作数的运算符 二元运算符
-
-++  自身加1
-
--- 自身减1
-
-- 前置++
-
-  ```javascript
-  var num1 = 5;
-  ++ num1; 
-
-  var num2 = 6;
-  console.log(num1 + ++ num2);
-  ```
-
-- 后置++
-
-  ```javascript
-  var num1 = 5;
-  num1 ++;    
-  var num2 = 6 
-  console.log(num1 + num2 ++);
-  ```
-
-- 猜猜看
-
-  ```javascript
-  var a = 1; var b = ++a + ++a; console.log(b);    
-  var a = 1; var b = a++ + ++a; console.log(b);    
-  var a = 1; var b = a++ + a++; console.log(b);    
-  var a = 1; var b = ++a + a++; console.log(b);  
-  ```
-
+二元运算符：两个操作数的运算符 num+num
+ 
+ ```
+ 
+ 递增（num++,++num）、递减（num--,--num）
+ ++写在前面表示自私,先自增,再参与运算
+ ++写在后面表示无私,先参与运算,再自增
+ 
+ ```
   ​
-
 ### 逻辑运算符(布尔运算符)
+    与(并列条件 &&)或(或者,满足一个条件即可||)非(取反!)
+    
 	&& 与 两个操作数同时为true，结果为true，否则都是false
 	|| 或 两个操作数有一个为true，结果为true，否则为false
 	!  非  取反
